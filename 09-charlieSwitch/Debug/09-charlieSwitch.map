@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v4.4.5                      
 ******************************************************************************
->> Linked Wed Jul 20 13:31:44 2016
+>> Linked Wed Jul 20 15:57:12 2016
 
 OUTPUT FILE NAME:   <09-charlieSwitch.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs_noexit"  address: 0000c1a6
