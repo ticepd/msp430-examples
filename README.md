@@ -19,3 +19,4 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 12-sevenSegCounter    | Use the onboard switch to increment the count on the seven segment display
 | 13-pwmTest            | Fading effect on onboard Green LED using hardware PWM
 | 14-softwarePWM        | Implementation of PWM using software time delays
+| 15-timerCapture		| Uses the Input Capture mode of Timer to measure external signal period
