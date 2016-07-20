@@ -17,3 +17,4 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 10-timerBlink         | Use internal timer and low frequency oscillator to blink LED
 | 11-sevenSegment       | Countinuously count from 0-9 on a seven segment disply
 | 12-sevenSegCounter    | Use the onboard switch to increment the count on the seven segment display
+| 13-pwmTest            | Fading effect on onboard Green LED using hardware PWM
