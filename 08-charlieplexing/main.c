@@ -1,11 +1,11 @@
 #include <msp430.h> 
 
-#define POUT	P1OUT					// PxOUT for Charlieplexed LEDs
-#define PDIR	P1DIR					// PxDIR for Charlieplexed LEDs
-#define P1		BIT0					// Charlieplex P1 -> P1.0
-#define	P2		BIT1					// Charlieplex P2 -> P1.1
-#define P3		BIT2					// Charlieplex P3 -> P1.2
-#define P4		BIT4					// Charlieplex P4 -> P1.3
+#define POUT	P2OUT					// PxOUT for Charlieplexed LEDs
+#define PDIR	P2DIR					// PxDIR for Charlieplexed LEDs
+#define P1		BIT0					// Charlieplex P1 -> P2.0
+#define	P2		BIT1					// Charlieplex P2 -> P2.1
+#define P3		BIT2					// Charlieplex P3 -> P2.2
+#define P4		BIT3					// Charlieplex P4 -> P2.3
 
 //Data Table for 12 Charliplexed LEDs
 const unsigned int hi[12] = {P1,P2,P1,P3,P1,P4,P2,P3,P2,P4,P3,P4};
