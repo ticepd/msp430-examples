@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v4.4.5                      
 ******************************************************************************
->> Linked Tue Jul 19 12:03:12 2016
+>> Linked Wed Jul 20 13:31:31 2016
 
 OUTPUT FILE NAME:   <03-testSwitch.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 0000c028

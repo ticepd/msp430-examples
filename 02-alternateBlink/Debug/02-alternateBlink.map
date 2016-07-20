@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v4.4.5                      
 ******************************************************************************
->> Linked Tue Jul 19 11:57:54 2016
+>> Linked Wed Jul 20 13:31:29 2016
 
 OUTPUT FILE NAME:   <02-alternateBlink.out>
 ENTRY POINT SYMBOL: "_c_int00_noinit_noargs_noexit"  address: 0000c07c
