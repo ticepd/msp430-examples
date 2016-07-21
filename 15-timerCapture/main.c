@@ -2,7 +2,8 @@
 
 volatile unsigned int count, edge1, edge2, period;	// Global variables
 volatile unsigned long freq;
-int main(void)
+
+void main(void)
 {
 	WDTCTL = WDTPW + WDTHOLD;                 		// Stop watchdog timer
 

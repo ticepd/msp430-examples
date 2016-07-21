@@ -2,7 +2,7 @@
 
 long adcValue, tempC;
 
-int main(void)
+void main(void)
 {
 	WDTCTL = WDTPW + WDTHOLD;                 	// Stop watchdog timer
 	ADC10CTL1 = INCH_10 + ADC10DIV_3;         	// ADC Channel -> 10 (Temp Sensor), CLK/4
