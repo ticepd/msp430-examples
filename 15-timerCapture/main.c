@@ -1,7 +1,7 @@
 #include <msp430.h>
 
 volatile unsigned int count, edge1, edge2, period;	// Global variables
-
+volatile unsigned long freq;
 int main(void)
 {
 	WDTCTL = WDTPW + WDTHOLD;                 		// Stop watchdog timer
@@ -30,7 +30,10 @@ int main(void)
 		//Exits LPM0 after 2 rising edges are captured
 
 		if(edge2 > edge1)							// Ignore calculation if overflow occured
+		{
 			period = edge2 - edge1;             	// Calculate Period
+			freq = 1000000L/period;
+		}
 		__no_operation();                     		// For inserting breakpoint in debugger
 	}
 }
