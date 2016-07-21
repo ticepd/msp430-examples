@@ -20,3 +20,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 13-pwmTest            | Fading effect on onboard Green LED using hardware PWM
 | 14-softwarePWM        | Implementation of PWM using software time delays
 | 15-timerCapture		| Uses the Input Capture mode of Timer to measure external signal period
+| 16-adcTest			| Reads the internal temperature sensor and converts value to Celcius
+| 17-dcoTest			| Cycles through calibrated DCO frequencies during runtime
