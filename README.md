@@ -22,3 +22,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 15-timerCapture		| Uses the Input Capture mode of Timer to measure external signal period
 | 16-adcTest			| Reads the internal temperature sensor and converts value to Celcius
 | 17-dcoTest			| Cycles through calibrated DCO frequencies during runtime
+| 18-adcPWM				| Use ADC input to control intensity of onboard Green LED
+| 19-adcPWM-lpm			| Implementation of ADC based PWM control using low power modes
