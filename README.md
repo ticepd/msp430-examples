@@ -24,3 +24,4 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 17-dcoTest			| Cycles through calibrated DCO frequencies during runtime
 | 18-adcPWM				| Use ADC input to control intensity of onboard Green LED
 | 19-adcPWM-lpm			| Implementation of ADC based PWM control using low power modes
+| 20-uartEcho			| Implements UART link at a baud rate of 9600. Echoes RX char + 1
