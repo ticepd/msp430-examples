@@ -25,3 +25,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 18-adcPWM				| Use ADC input to control intensity of onboard Green LED
 | 19-adcPWM-lpm			| Implementation of ADC based PWM control using low power modes
 | 20-uartEcho			| Implements UART link at a baud rate of 9600. Echoes RX char + 1
+| 21-helloWorld			| Prints the string Hello World ! on the UART link
+| 22-uartPrintNum		| Converts an integer value to string and prints it on the UART link
