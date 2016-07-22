@@ -28,3 +28,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 21-helloWorld			| Prints the string Hello World ! on the UART link
 | 22-uartPrintNum		| Converts an integer value to string and prints it on the UART link
 | 23-uartADC			| Displays the ADC value on the UART link
+| 24-spiShift			| Use SPI protocol to send data to a shift register
+| 25-i2cTempSensor		| Read temperature values from a LM75 sensor over I2C
