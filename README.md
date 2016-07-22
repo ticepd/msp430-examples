@@ -27,3 +27,4 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 20-uartEcho			| Implements UART link at a baud rate of 9600. Echoes RX char + 1
 | 21-helloWorld			| Prints the string Hello World ! on the UART link
 | 22-uartPrintNum		| Converts an integer value to string and prints it on the UART link
+| 23-uartADC			| Displays the ADC value on the UART link
