@@ -5,11 +5,11 @@ char message[] = { "Hello World ! \r\n" };
 void print(char *text)
 {
 	unsigned int i = 0;
-	while(text[i] != '\0')
+	while(text[i] != '\0')				// Check for end of string
 	{
 		while (!(IFG2&UCA0TXIFG));		// Check if TX is ongoing
-		UCA0TXBUF = text[i];			// TX -> Received Char + 1
-		i++;
+		UCA0TXBUF = text[i];			// TX -> current char
+		i++;							// Increment counter
 	}
 }
 
@@ -39,4 +39,3 @@ void main(void)
 		__delay_cycles(100000);
 	}
 }
-
