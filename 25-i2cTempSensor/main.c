@@ -25,6 +25,7 @@ int main(void)
 	  // Remains in LPM0 until data is received
 
 	  data &= 0x01FF;							// Use only 9 bits of data
+	  data = data / 2;
 	  __delay_cycles(100000);					// Delay 100 ms
   }
 }
@@ -36,12 +37,12 @@ __interrupt void USCIAB0TX_ISR(void)
 
 	if (count)
 	{
-		data = UCB0RXBUF;						// Get first received byte
+		data = (unsigned int)UCB0RXBUF<<1;		// Get first received byte
 		UCB0CTL1 |= UCTXSTP;					// Generate I2C stop condition
 	}
 	else
 	{
-		data |= (unsigned int)UCB0RXBUF<<8;		// Get second received byte & combine
+		data |= UCB0RXBUF>>7;					// Get second received byte & combine
 		__bic_SR_register_on_exit(CPUOFF);		// Exit LPM0
 	}
 }
