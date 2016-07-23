@@ -30,3 +30,4 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 23-uartADC			| Displays the ADC value on the UART link
 | 24-spiShift			| Use SPI protocol to send data to a shift register
 | 25-i2cTempSensor		| Read temperature values from a LM75 sensor over I2C
+| 26-bitBangShift		| Implements SPI communication with shift register by bit banging GPIO
