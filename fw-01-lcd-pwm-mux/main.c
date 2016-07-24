@@ -126,30 +126,48 @@ void main(void)
 	lcd_write(0x01, CMD); 				// Clear screen
 	delay(20);
 
-	CCR0 = 500;							// Set Timer0 PWM Period
-	CCTL1 = OUTMOD_7;					// Set TA0.1 Waveform Mode - Clear on Compare, Set on Overflow
-	CCR1 = 1;							// Set TA0.1 PWM duty cycle
-	TACTL = TASSEL_2 + MC_1;			// Timer Clock -> SMCLK, Mode -> Up Count
+	TA0CCR0 = 500;							// Set Timer0 PWM Period
+	TA0CCTL1 = OUTMOD_7;					// Set TA0.1 Waveform Mode - Clear on Compare, Set on Overflow
+	TA0CCR1 = 1;							// Set TA0.1 PWM duty cycle
+	TA0CTL = TASSEL_2 + MC_1;				// Timer Clock -> SMCLK, Mode -> Up Count
+
+	TA1CCR0 = 500;							// Set Timer0 PWM Period
+	TA1CCTL1 = OUTMOD_7;					// Set TA0.1 Waveform Mode - Clear on Compare, Set on Overflow
+	TA1CCR1 = 1;							// Set TA0.1 PWM duty cycle
+	TA1CCTL2 = OUTMOD_7;					// Set TA0.1 Waveform Mode - Clear on Compare, Set on Overflow
+	TA1CCR2 = 1;							// Set TA0.1 PWM duty cycle
+	TA1CTL = TASSEL_2 + MC_1;				// Timer Clock -> SMCLK, Mode -> Up Count
 
 	unsigned int count = 0;
 	while(1)
 	{
 		count++;						// Increment Count
-		P2SEL &= ~BIT6;					// Set P2.6 as GPIO
+
+		P2SEL &= ~(BIT6+BIT4+BIT2);		// Set P2.6 as GPIO
 		lcd_printNumber(count);			// Print Count on LCD
 		lcd_setCursor(0,0);				// Goto initial position
-		P2SEL |= BIT6;					// Set P2.6 as PWM
+		P2SEL |= (BIT6+BIT4+BIT2);		// Set P2.6 as PWM
 
 		unsigned int i;
 		for(i = 0; i < 500; i++)
 		{
-			CCR1 = i;					// Increase Duty from min to max
-			__delay_cycles(5000);
+			if(count % 3 == 0)
+				TA0CCR1 = i;
+			if(count % 3 == 1)
+				TA1CCR1 = i;
+			if(count % 3 == 2)
+				TA1CCR2 = i;
+			__delay_cycles(500);
 		}
 		for(i = 500; i > 0; i--)
 		{
-			CCR1 = i;					// Decrease Duty from max to min
-			__delay_cycles(5000);
+			if(count % 3 == 0)
+				TA0CCR1 = i-1;
+			if(count % 3 == 1)
+				TA1CCR1 = i-1;
+			if(count % 3 == 2)
+				TA1CCR2 = i-1;
+			__delay_cycles(500);
 		}
 
 	}
