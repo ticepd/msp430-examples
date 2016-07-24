@@ -31,4 +31,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 24-spiShift			| Use SPI protocol to send data to a shift register
 | 25-i2cTempSensor		| Read temperature values from a LM75 sensor over I2C
 | 26-bitBangShift		| Implements SPI communication with shift register by bit banging GPIO
-| 27-helloLCD			| Connects to a 16x2 LCD using 4-bit mode and displays text
+| 27-helloLCD			| Connects to a 16x2 LCD using 4-bit mode, generic library .c & .h files
+| 28-simpleLCD			| Simplified version of 16x2 LCD, requires all LCD pins to be on same port
