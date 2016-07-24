@@ -41,19 +41,14 @@
 #define LCD_5x10DOTS 0x04
 #define LCD_5x8DOTS 0x00
 
-#if defined(LCD_PORT) && defined(LCD_DIR)
-#define LCD_DAT_OUT		LCD_PORT
-#define LCD_RS_OUT		LCD_PORT
-#define LCD_EN_OUT		LCD_PORT
-#define LCD_DAT_DIR		LCD_DIR
-#define LCD_RS_DIR		LCD_DIR
-#define LCD_EN_DIR		LCD_DIR
-#endif
+#define P1 		1
+#define P2		2
+#define P3		3
 
 #define CMD		0
 #define DATA	1
 
-void lcd_init(void);
+void lcd_init(uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t);
 void lcd_setCursor(uint8_t, uint8_t);
 void lcd_print(char *);
 void lcd_write(uint8_t, uint8_t);
