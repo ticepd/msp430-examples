@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<deviceVariant value="MSP430G2452"/>
+	<deviceFamily value="MSP430"/>
+	<codegenToolVersion value="4.4.5"/>
+	<isElfFormat value="true"/>
+	<connection value="common/targetdb/connections/TIMSP430-USB.xml"/>
+	<linkerCommandFile value="lnk_msp430g2452.cmd"/>
+	<rts value="libc.a"/>
+	<createSlaveProjects value=""/>
+	<origin value="C:\ti\msp430\MSP430ware_1_97_00_47\captouchlib\Example_Projects\CCS\RO_PINOSC_TA0_WDTp_One_Button\ro_pinosc_ta0_wdtp_one_button.projectspec"/>
+	<templateProperties value="id=ro_pinosc_ta0_wdtp_one_button.projectspec.ro_pinosc_ta0_wdtp_one_button,"/>
+	<isTargetManual value="false"/>
+</projectOptions>
