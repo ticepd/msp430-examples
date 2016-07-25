@@ -33,3 +33,5 @@ Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Pat
 | 26-bitBangShift		| Implements SPI communication with shift register by bit banging GPIO
 | 27-helloLCD			| Connects to a 16x2 LCD using 4-bit mode, generic library .c & .h files
 | 28-simpleLCD			| Simplified version of 16x2 LCD, requires all LCD pins to be on same port
+| 29-capTouch			| Implementation of capacitive touch sensing using TI Libraries
+| 30-melodyBuzzer		| Play a musical melody on a piezo buzzer using timers
