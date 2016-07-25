@@ -1,5 +1,5 @@
-# MSP430 @ NITP
-Various Code Examples for MSP430G2553 (used at the Training Programme at NIT Patna, July 2016)
+# MSP430 CCS Code Examples
+Various Code Examples for MSP430G2553 (used at the Training Programme of TI-CEPD)
 
 ## List of Examples
 | Project Name          | Description   |
