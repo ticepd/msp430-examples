@@ -11,9 +11,9 @@ void main(void)
 
     TACCR0 = 5000;						// Set Timer Timeout Value
     TACCTL0 |= CCIE;					// Enable Overflow Interrupt
-    TACTL |= MC_1 + TASSEL_1 + TACLR ;	// Set Mode -> Up Count, Clock -> ACLK, Clear Timer
+    TACTL |= MC_1 + TASSEL_2 + ID_3 + TACLR ;  // Set Mode -> Up Count, Clock -> SMCLK, Set Input Divider: /8,  Clear Timer
 
-   	__bis_SR_register(LPM3_bits + GIE);	// Goto LPM3 (Only ACLK active), Enable CPU Interrupt
+    __bis_SR_register(LPM0_bits + GIE); // Goto LPM0 (SMCLK active), Enable CPU Interrupt
 }
 
 #pragma vector = TIMER0_A0_VECTOR		// CCR0 Interrupt Vector
